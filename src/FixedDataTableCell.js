@@ -293,9 +293,10 @@ var FixedDataTableCell = createReactClass({
     }
 
     var content;
+    /*
     if (React.isValidElement(props.cell)) {
       content = React.cloneElement(props.cell, cellProps);
-    } else if (typeof props.cell === 'function') {
+    } else*/ if (typeof props.cell === 'function') {
       content = props.cell(cellProps);
     } else {
       content = (
